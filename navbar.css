@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+section{
+    background-color: rgb(253, 249, 249);
+    width: 100%;
+    height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    
+}
+
+section>article{
+    width: 100%;
+    z-index: -100;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+section>article> .logo>img{
+    height: 70px;
+    object-fit: cover;
+    width: 120px;
+    
+}
+
+
+
+section>article>ol{
+    display: flex;
+    flex-direction: row;
+    margin-right: 220px;
+
+}
+
+section>article>ol>li{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 600;
+    
+}
+
+section>article>ol>li>a{
+    text-decoration: none;
+    padding: 2px;
+    line-height: 70px;
+    margin: 27px;
+    overflow: none;
+    position: relative;
+    color: blue;
+    font-weight: 800;
+    
+}
+
+section>article>ol>li>.none{
+    line-height: 70px;
+}
+section>article>ol>li>a>sup{
+    color: red;
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+
+
+section>article>ol>li>a:hover::after{
+    content: '';
+    color: gold;
+    border-bottom: 2px solid blue;   
+    width: 70px;
+    height: 2px; 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 27px;
+    transition: 0.5s ;
+}
+
+section>article>ol>li.four:hover::after{
+    content: '';
+    color: gold;
+    border-bottom: 2px solid blue;
+    width: 125px;
+    height: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 27px;
+    transition: 0.5s;
+
+}
+
+section>article>ol>li.first:hover::after{
+    content: '';
+    border-bottom: 2px solid blue;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    /* transition: 0.5s;  */
+}
+
+section>article>ol>li.second:hover::after {
+    content: '';
+    border-bottom: 2px solid rosybrown;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    /* display: initial; */
+    /* transition: 0.5s;  */
+}
+
+
+section>article>ol>li.second>.drop-down{
+    display: none;
+
+}
+
+section>article>ol>li.second:hover .drop-down{
+    display: block;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+section>article>ol>li.second>.drop-down>dl>dt{
+    color: red;
+    margin-left: 2px;
+    display: flex;
+    margin-bottom: 2px;
+    border-bottom: 2px solid red;
+
+}
+
+section>article>ol>li.second>.drop-down>.boys-collection,
+section>article>ol>li.second>.drop-down>.girls-collection{
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    padding: 40px;
+    /* width: 200px; */
+}
+
+section>article>ol>li.second>.drop-down>.boys-collection{
+    position: relative;
+}
+
+section>article>ol>li.second>.drop-down>.girls-collection{
+    position: absolute;
+    margin-left: 173px;
+    margin-top: -238px;
+    height: 237px;
+    
+}
+
+
+
+section>article>footer>.search-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: -300px;
+   
+}
+
+section>article>footer>.search-input>input{
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: none;
+    
+}
+/* section>article>span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+section>article>span>.icons{
+    display: flex;
+    width: 20px;
+    margin-top: 25px;
+    margin-left: -60px;
+    cursor: pointer;
+}
+
+section>article>span>.like{
+    display: flex;
+    width: 20px;
+    margin-top: -27px;
+    cursor: pointer;
+    margin-left: -20px;
+}
+
+section>article>span>.bag {
+    display: flex;
+    width: 20px;
+    margin-top: -27px;
+    margin-left: 30px;
+    
+}
+
+section>article>span>div>i>p{
+    font-size: 11px;
+    margin-left: -10px;
+    font-weight: 200;
+    font-style:italic;
+    
+}
+
+section>article>span>.bag>i>p{
+    margin-left: -2px;
+}
+
+/* section>article>footer>.search-input>i{
+    z-index: -2;
+    display: block;
+    position: absolute;
+    margin-top: 200px;
+    background-color: red;
+    color: blue;
+
+} */
+
+
